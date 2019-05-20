@@ -11,6 +11,8 @@ sudo apt-get update && sudo apt upgrade -y
 
 ## create new EBS sc1 volume of 1TB and mount 
 
+lsblk   # to find the attached volume to ec2
+
 sudo mkfs -t ext4 /dev/nvme0n1
 
 mkdir /home/ubuntu/ftpstore
